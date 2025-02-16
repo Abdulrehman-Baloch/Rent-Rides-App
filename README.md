@@ -121,11 +121,8 @@ cd RentRides
 - Execute schema.sql to set up tables  
 - Update database-config.properties with credentials
 
-### License
-- This project is open-source and available for educational purposes.
-
 ### Run the Application  
 - Run Main.java to start the JavaFX application  
 
-## License  
-- This project is licensed under the MIT License  
+### License
+- This project is open-source and available for educational purposes. 
