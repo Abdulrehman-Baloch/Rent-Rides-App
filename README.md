@@ -126,5 +126,3 @@ cd RentRides
 
 ## License  
 - This project is licensed under the MIT License  
-
-This README provides a structured overview of the RentRides JavaFX application, covering all essential details for users and developers. Let me know if you need modifications.
