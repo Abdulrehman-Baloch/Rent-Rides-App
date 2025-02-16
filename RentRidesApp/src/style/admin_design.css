@@ -1,0 +1,51 @@
+/* General styles for the AnchorPane background */
+.anchor-pane {
+    -fx-background-color: grey;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-border-color: black;
+    -fx-border-width: 4;
+}
+
+/* TextArea styling */
+.text-area {
+    -fx-background-color: black;
+    -fx-border-color: #70cd98;
+    -fx-border-width: 3;
+    -fx-prompt-text-fill: black;
+    -fx-text-fill: black;
+}
+
+/* Button styling (shared styles) */
+.button {
+    -fx-background-color: black;
+    -fx-border-color: #70cd98;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+    -fx-font-family: "Corbel";
+	-fx-font-weight: Bold;
+    -fx-font-size: 14;
+}
+
+/* ComboBox styling */
+.combo-box {
+    -fx-background-color: black;
+    -fx-border-color: #70cd98;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: black;
+    -fx-border-color: #70cd98;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+}

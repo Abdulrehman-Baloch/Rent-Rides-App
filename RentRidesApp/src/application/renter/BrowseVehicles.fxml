@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="671.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.renter.BrowseVehiclesController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="671.0">
+         <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_9.jpg" />
+         </image>
+      </ImageView>
+      <VBox id="vehicleListVBox" fx:id="vehicleListVBox" layoutX="36.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3;" visible="true">
+         <children>
+            <HBox prefHeight="22.0" prefWidth="600.0">
+               <children>
+                  <!-- Type Filter ComboBox -->
+                  <ComboBox id="typeFilter" fx:id="typeFilter" prefHeight="36.0" prefWidth="131.0" promptText="Filter by Type" />
+                  
+                  <!-- Location Filter TextField -->
+                  <TextField id="locationFilter" fx:id="locationFilter" prefHeight="38.0" prefWidth="111.0" promptText="Location" />
+                  
+                  <!-- Model Filter TextField -->
+                  <TextField id="modelFilter" fx:id="modelFilter" prefHeight="38.0" prefWidth="106.0" promptText="Model" />
+                  
+                  <!-- Minimum Price Filter TextField -->
+                  <TextField id="minPriceFilter" fx:id="minPriceFilter" prefHeight="38.0" prefWidth="99.0" promptText="Min Price" />
+                  
+                  <!-- Maximum Price Filter TextField -->
+                  <TextField id="maxPriceFilter" fx:id="maxPriceFilter" prefHeight="37.0" prefWidth="116.0" promptText="Max Price" />
+                  
+                  <!-- Search Button -->
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchVehicles" prefHeight="26.0" prefWidth="107.0" text="Search" />
+               </children>
+            </HBox>
+            
+            <!-- Vehicle List ScrollPane -->
+            <ScrollPane prefHeight="360.0" prefWidth="579.0" style="-fx-background-color: white;">
+               <content>
+                  <!-- Vehicle List Container -->
+                  <VBox fx:id="vehicleListContainer" prefHeight="336.0" prefWidth="592.0" style="-fx-background-color: white;">
+                     <children>
+                        <!-- Placeholder for vehicle images -->
+                        <ImageView fx:id="vehicleImageView" fitHeight="307.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" layoutX="296.0" layoutY="454.0" onAction="#handleBackAction" prefHeight="30.0" prefWidth="80.0" text="Back" />
+   </children>
+</AnchorPane>

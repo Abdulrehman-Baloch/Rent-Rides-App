@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="571.0" prefWidth="481.0" stylesheets="@../../style/edit_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vehicle.AddVehicleController">
+   <ImageView fitHeight="571.0" fitWidth="481.0">
+      <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_8.jpg" />
+      </image>
+   </ImageView>
+    <TextField fx:id="nameField" layoutX="68.0" layoutY="52.0" prefHeight="25.0" prefWidth="346.0" promptText="Enter Vehicle Name" />
+    <TextField fx:id="modelField" layoutX="68.0" layoutY="100.0" prefHeight="25.0" prefWidth="346.0" promptText="Enter Vehicle Model" />
+    <TextField fx:id="registrationNumField" layoutX="68.0" layoutY="148.0" prefHeight="25.0" prefWidth="346.0" promptText="Enter Registration Number" />
+    <ChoiceBox fx:id="vehicleTypeChoiceBox" layoutX="206.0" layoutY="198.0" prefHeight="29.0" prefWidth="197.0" />
+    <TextField fx:id="rentPerDayField" layoutX="68.0" layoutY="244.0" prefHeight="25.0" prefWidth="346.0" promptText="Enter Rent per Day" />
+    <TextArea fx:id="featuresArea" layoutX="68.0" layoutY="286.0" prefHeight="50.0" prefWidth="346.0" promptText="List down feautures.." wrapText="true" />
+
+    <!-- Vehicle Image (Placeholder, can be expanded later) -->
+    <Label layoutX="72.0" layoutY="403.0" prefHeight="17.0" prefWidth="98.0" text="Upload Image:" />
+
+    <!-- Add Image Button -->
+    <Button fx:id="addImageButton" layoutX="206.0" layoutY="404.0" mnemonicParsing="false" onAction="#addImage" prefHeight="33.0" prefWidth="197.0" text="Add Image" />
+    <Button fx:id="saveButton" layoutX="74.0" layoutY="503.0" onAction="#saveVehicle" prefWidth="150.0" text="SAVE" />
+    <Button fx:id="exitButton" layoutX="252.0" layoutY="503.0" onAction="#exit" prefWidth="150.0" text="EXIT" textFill="#c63a3a" />
+   <TextField fx:id="locationField" layoutX="68.0" layoutY="358.0" prefHeight="25.0" prefWidth="346.0" promptText="Enter Location.." />
+   
+   <Label layoutX="72.0" layoutY="420.0" text="(*jpg, *jpeg, *png)" />
+   <Label fx:id="fileNameLabel" layoutX="74.0" layoutY="452.0" prefHeight="25.0" prefWidth="206.0" text="Label" />
+   <Label fx:id="fileNameLabel1" layoutX="68.0" layoutY="200.0" prefHeight="25.0" prefWidth="138.0" text="Choose Vehicle Type:" />
+</AnchorPane>

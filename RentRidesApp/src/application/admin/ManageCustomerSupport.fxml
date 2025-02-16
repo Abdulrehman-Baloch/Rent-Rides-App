@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="599.0" style="-fx-background-color: grey;" stylesheets="@../../style/admin_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.ManageCustomerSupportController">
+   <children>
+      <ImageView fitHeight="479.0" fitWidth="599.0">
+         <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_11.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="supportTable" layoutX="30.0" layoutY="30.0" prefHeight="200.0" prefWidth="531.0" style="-fx-border-color: black; -fx-border-width: 4;">
+        <columns>
+          <TableColumn fx:id="supportID" prefWidth="62.39999198913574" text="supportID" />
+          <TableColumn fx:id="renterID" prefWidth="61.600013732910156" text="renterID" />
+            <TableColumn fx:id="issueType" prefWidth="89.5999755859375" text="Type" />
+            <TableColumn fx:id="issueDescription" prefWidth="208.800048828125" text="Description" />
+            <TableColumn fx:id="status" prefWidth="96.80001831054688" text="Status" />
+            <TableColumn fx:id="response" prefWidth="84.79998779296875" text="Response" />
+            <TableColumn fx:id="createdAt" prefWidth="82.40004882812502" text="createdAt" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="responseField" layoutX="33.0" layoutY="246.0" prefHeight="57.0" prefWidth="531.0" promptText="Enter Response for Customer Query.." style="-fx-background-color: black; -fx-border-color: #70cd98; -fx-border-width: 3;" />
+
+      <!-- Update button -->
+      <Button fx:id="updateButton" layoutX="480.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleUpdate" style="-fx-background-color: BLACK; -fx-border-color: #70cd98; -fx-border-width: 2;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Exit button -->
+      <Button fx:id="exitButton" layoutX="251.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: black; -fx-border-color: #70cd98; -fx-border-width: 2;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="statusOfSupport" editable="true" layoutX="38.0" layoutY="316.0" prefHeight="35.0" prefWidth="427.0" promptText="Update Status" style="-fx-background-color: black;" />
+      <TextField fx:id="deleteID" layoutX="37.0" layoutY="363.0" prefHeight="31.0" prefWidth="427.0" promptText="Enter supportID you want to delete.." style="-fx-background-color: black; -fx-border-color: #70cd98; -fx-text-fill: white;" />
+      <Button fx:id="deleteButton" layoutX="478.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="31.0" prefWidth="75.0" style="-fx-text-fill: WHITE; -fx-background-color: BLACK; -fx-border-color: #70cd98; -fx-border-width: 2;" text="DELETE">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
